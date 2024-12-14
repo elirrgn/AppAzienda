@@ -1,45 +1,63 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-import { Platform } from 'react-native';
+import Icons from "react-native-vector-icons/FontAwesome";
+import { Ionicons } from "@expo/vector-icons";
+import { Tabs, useRouter } from "expo-router";
+import Colors from "@/utilities/Color";
 
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+export default function TabsLayout() {
+  const router = useRouter();
 
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
-        }}
-      />
-    </Tabs>
-  );
+  <Tabs
+    screenOptions={{
+        tabBarActiveTintColor: Colors.PRIMARY,
+        headerStyle: {
+          backgroundColor: Colors.PRIMARYDARKER,
+        },
+        headerShadowVisible: false,
+        headerTintColor: Colors.LIGHT,
+        tabBarStyle: {
+          backgroundColor: Colors.PRIMARYDARKER,
+        },
+        headerTitleAlign: "center",
+        headerRight: () => (
+          <Ionicons name="notifications-outline" size={30} color={Colors.LIGHT} style={{marginEnd: 20}} onPress={() => router.push("../notifics")}></Ionicons>
+        ),
+    }}
+  >
+    <Tabs.Screen 
+      name="index"
+      options={{
+        headerTitle: "Home",
+        tabBarIcon: ({focused, color}) => <Ionicons name={focused?"home":"home-outline"} size={30} color={color}></Ionicons>
+      }} 
+    />
+    <Tabs.Screen 
+      name="salvati"
+      options={{
+        headerTitle: "Salvati",
+        tabBarIcon: ({focused, color}) => <Icons name={focused?"bookmark":"bookmark-o"} size={30} color={color}></Icons>
+      }}
+    />
+    <Tabs.Screen 
+      name="creapost"
+      options={{
+        headerTitle: "Crea Post",
+        tabBarIcon: ({focused, color}) => <Icons name={focused?"plus-square":"plus-square-o"} size={30} color={color}></Icons>
+      }}
+    />
+    <Tabs.Screen 
+      name="chat"
+      options={{
+        headerTitle: "Chat",
+        tabBarIcon: ({focused, color}) => <Ionicons name={focused?"chatbox-ellipses":"chatbox-ellipses-outline"} size={30} color={color}></Ionicons>
+      }}
+    />
+    <Tabs.Screen 
+      name="profile"
+      options={{
+        headerTitle: "Profile",
+        tabBarIcon: ({focused, color}) => <Icons name={focused?"user-circle":"user-circle-o"} size={30} color={color}></Icons>
+      }}
+    />
+  </Tabs>);
 }
