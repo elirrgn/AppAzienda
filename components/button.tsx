@@ -18,7 +18,6 @@ export default function Button({ label, theme }: Props) {
         <Pressable
           style={[styles.button, { backgroundColor: Colors.LIGHT }]}
           onPress={() => alert('You pressed a button.')}>
-          <FontAwesome name="picture-o" size={18} color={Colors.PRIMARYDARK} style={styles.buttonIcon} />
           <Text style={[styles.buttonLabel, { color: Colors.PRIMARYDARK }]}>{label}</Text>
         </Pressable>
       </View>

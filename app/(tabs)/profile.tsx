@@ -1,22 +1,18 @@
-import Colors from '@/utilities/Color';
+import ProfileLabel from '@/components/profileLabel';
 import { Text, View, StyleSheet } from 'react-native';
 
-export default function ProfileScreen() {
+export default function ProfileScreen( ) {
+
+
     return (
-        <View style={styles.container}>
-            <Text style={styles.text}>Profile screen</Text>
+        <View className='h-full flex flex-row items-center'>
+          <View className='flex-1'>
+            <Text>Profile screen</Text>
+            <View className='my-6 border-b-'>
+              <ProfileLabel label='Logout' iconName='logout'/>
+              <ProfileLabel label='Logout' iconName='logout'/>
+            </View>
+          </View>
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: Colors.LIGHT,
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    text: {
-      color: Colors.DARK,
-    },
-  });
