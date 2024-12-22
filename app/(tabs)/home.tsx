@@ -5,7 +5,8 @@ import Colors from "@/utilities/Color";
 
 const PlaceholderImage = require("@/assets/images/azienda.jpg")
 
-export default function Index() {
+export default function Home() {
+  
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>

@@ -25,7 +25,7 @@ export default function TabsLayout( ) {
       }}
   >
     <Tabs.Screen 
-      name="index"
+      name="home"
       options={{
         headerTitle: "Home",
         tabBarLabel: "Home",

@@ -1,16 +1,16 @@
-import Login from '@/app/login';
 import { View, Pressable, Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 type Props = {
   label: string;
   iconName: string;
+  onPressFunction: ()=>void;
 };
 
-export default function ProfileLabel({ label, iconName }: Props) {
+export default function ProfileLabel({ label, iconName, onPressFunction }: Props) {
 
   return(
-    <TouchableOpacity onPress={()=> {}}>
+    <TouchableOpacity onPress={onPressFunction}>
         <View className='w-full flex flex-row justify-between items-center border-t p-8'>
             <Icon className="" name={iconName}/>
             <Text className='flex-1'>{label}</Text>
