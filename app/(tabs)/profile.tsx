@@ -7,9 +7,9 @@ export default function ProfileScreen( ) {
 
     return (
         <View className='h-full flex flex-row items-center'>
-          <View className='flex-1'>
+          <View className='flex-1 '>
             <Text>Profile screen</Text>
-            <View className='my-6'>
+            <View className='my-6 border-b border-black'>
               <ProfileLabel label='Logout' iconName='logout' onPressFunction={()=>{router.navigate("../../")}}/>
             </View>
           </View>

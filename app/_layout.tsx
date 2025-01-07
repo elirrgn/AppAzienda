@@ -1,7 +1,6 @@
 import { Stack, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import Colors from "@/utilities/Color";
-import { useState } from "react";
 import '../global.css';
 
 
