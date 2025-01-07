@@ -11,8 +11,8 @@ export default function ProfileLabel({ label, iconName, onPressFunction }: Props
 
   return(
     <TouchableOpacity onPress={onPressFunction}>
-        <View className='w-full flex flex-row justify-between items-center border-t p-8'>
-            <Icon className="" name={iconName}/>
+        <View className='w-full flex flex-row justify-between items-center border-t border-b p-8'>
+            <Icon name={iconName}/>
             <Text className='flex-1'>{label}</Text>
         </View>
 

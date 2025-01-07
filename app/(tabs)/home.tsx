@@ -1,36 +1,19 @@
-import { View, StyleSheet } from "react-native";
-import ImageViewer from "@/components/ImageViewer";
-import Button from "@/components/button";
-import Colors from "@/utilities/Color";
-
-const PlaceholderImage = require("@/assets/images/azienda.jpg")
+import Item from "@/components/item";
+import { View, Text, ScrollView } from "react-native";
 
 export default function Home() {
-  
+
   return (
-    <View style={styles.container}>
-      <View style={styles.imageContainer}>
-        <ImageViewer imgSource={PlaceholderImage}/>
-      </View>
-      <View style={styles.footerContainer}>
-        <Button label="Make your choice" theme="primary"></Button>
-      </View>
+    <View className="container p-2">
+      <Text className="font-extrabold text-3xl text-black mb-2">Discover</Text>
+      <ScrollView horizontal className="p-3" showsHorizontalScrollIndicator={false}>
+        <View className="flex-row justify-start gap-2 overflow-y-scroll w-full">
+          <Item name="CPU intel" cost={10.00} img={require("../../assets/images/cpu.webp")}></Item>
+          <Item name="Tower" cost={9.99} img={require("../../assets/images/case.png")}></Item>
+          <Item name="Small Tower" cost={10.00} img={require("../../assets/images/case.png")}></Item>
+          <Item name="CPU intel" cost={10.00} img={require("../../assets/images/cpu.webp")}></Item>
+        </View>
+      </ScrollView>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.LIGHT,
-    alignItems: 'center',
-  },
-  imageContainer: {
-    flex: 1,
-    marginTop: 30,
-  },
-  footerContainer: {
-    flex: 1 / 3,
-    alignItems: 'center',
-  },
-});
