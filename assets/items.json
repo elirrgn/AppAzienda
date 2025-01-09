@@ -1,0 +1,189 @@
+{
+  "prodotti": {
+    "laptop": [
+      {
+        "nome": "Dell XPS 13",
+        "prezzo": 1200,
+        "valutazione": 4.5,
+        "descrizione": "Laptop ultra-portatile con display InfinityEdge da 13 pollici.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "MacBook Air M1",
+        "prezzo": 999,
+        "valutazione": 4.8,
+        "descrizione": "Laptop Apple con chip M1 e display Retina da 13 pollici.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "HP Spectre x360",
+        "prezzo": 1300,
+        "valutazione": 4.4,
+        "descrizione": "Laptop convertibile con touchscreen e design elegante.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Lenovo ThinkPad X1 Carbon",
+        "prezzo": 1400,
+        "valutazione": 4.6,
+        "descrizione": "Laptop business ultraleggero con prestazioni elevate.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Asus ROG Zephyrus G14",
+        "prezzo": 1500,
+        "valutazione": 4.7,
+        "descrizione": "Laptop da gaming potente con scheda grafica dedicata.",
+        "data_inserimento": "2025-01-08"
+      }
+    ],
+    "smartphone": [
+      {
+        "nome": "iPhone 13",
+        "prezzo": 799,
+        "valutazione": 4.8,
+        "descrizione": "Smartphone Apple con chip A15 Bionic e display Super Retina XDR.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Samsung Galaxy S21",
+        "prezzo": 699,
+        "valutazione": 4.6,
+        "descrizione": "Smartphone Android con display AMOLED e fotocamera avanzata.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Google Pixel 6",
+        "prezzo": 599,
+        "valutazione": 4.5,
+        "descrizione": "Smartphone con Android puro e fotocamera di qualità superiore.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "OnePlus 9",
+        "prezzo": 729,
+        "valutazione": 4.4,
+        "descrizione": "Smartphone con schermo fluido e prestazioni veloci.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Xiaomi Mi 11",
+        "prezzo": 649,
+        "valutazione": 4.7,
+        "descrizione": "Smartphone con display AMOLED e fotocamera da 108 MP.",
+        "data_inserimento": "2025-01-08"
+      }
+    ],
+    "tablet": [
+      {
+        "nome": "iPad Pro",
+        "prezzo": 999,
+        "valutazione": 4.9,
+        "descrizione": "Tablet Apple con chip M1 e display Liquid Retina XDR.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Samsung Galaxy Tab S7",
+        "prezzo": 649,
+        "valutazione": 4.6,
+        "descrizione": "Tablet con display AMOLED e supporto per S Pen.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Microsoft Surface Pro 7",
+        "prezzo": 899,
+        "valutazione": 4.5,
+        "descrizione": "Tablet 2-in-1 con Windows 10 e kickstand integrato.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Lenovo Tab P11 Pro",
+        "prezzo": 499,
+        "valutazione": 4.4,
+        "descrizione": "Tablet con display OLED e audio Dolby Atmos.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Amazon Fire HD 10",
+        "prezzo": 149,
+        "valutazione": 4.3,
+        "descrizione": "Tablet economico con display da 10 pollici e Alexa integrata.",
+        "data_inserimento": "2025-01-08"
+      }
+    ],
+    "monitor": [
+      {
+        "nome": "LG UltraFine 5K",
+        "prezzo": 1299,
+        "valutazione": 4.8,
+        "descrizione": "Monitor 5K con display IPS e colori precisi per professionisti.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Dell UltraSharp U2721DE",
+        "prezzo": 699,
+        "valutazione": 4.7,
+        "descrizione": "Monitor QHD con cornici sottili e connettività USB-C.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Samsung Odyssey G7",
+        "prezzo": 799,
+        "valutazione": 4.6,
+        "descrizione": "Monitor da gaming curvo con refresh rate elevato e QHD.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "ASUS ProArt PA32UCX",
+        "prezzo": 2999,
+        "valutazione": 4.9,
+        "descrizione": "Monitor professionale 4K HDR con ampio spazio colore.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "BenQ PD3220U",
+        "prezzo": 1199,
+        "valutazione": 4.5,
+        "descrizione": "Monitor 4K UHD con supporto HDR10 e ampio spazio colore.",
+        "data_inserimento": "2025-01-08"
+      }
+    ],
+    "tastiere": [
+      {
+        "nome": "Logitech MX Keys",
+        "prezzo": 99,
+        "valutazione": 4.7,
+        "descrizione": "Tastiera wireless avanzata con tasti retroilluminati e ricarica USB-C.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Apple Magic Keyboard",
+        "prezzo": 99,
+        "valutazione": 4.6,
+        "descrizione": "Tastiera Apple con design sottile e tasti a forbice.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Razer Huntsman Elite",
+        "prezzo": 199,
+        "valutazione": 4.8,
+        "descrizione": "Tastiera da gaming meccanica con switch ottici e illuminazione RGB.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "Corsair K95 RGB Platinum",
+        "prezzo": 169,
+        "valutazione": 4.7,
+        "descrizione": "Tastiera da gaming meccanica con switch Cherry MX e macro personalizzabili.",
+        "data_inserimento": "2025-01-08"
+      },
+      {
+        "nome": "SteelSeries Apex Pro",
+        "prezzo": 199,
+        "valutazione": 4.6,
+        "descrizione": "Tastiera da gaming meccanica con switch regolabili e display OLED.",
+        "data_inserimento": "2025-01-08"
+      }
+    ]
+  }
+}
